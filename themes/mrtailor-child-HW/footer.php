@@ -1,7 +1,8 @@
 					<?php global $woocommerce, $yith_wcwl, $mr_tailor_theme_options; ?>
 
                     <footer id="site-footer" role="contentinfo">
-
+			<script type="text/javascript">var tsId=2487711;</script>
+			<script type="text/javascript" src="http://script.tailsweep.com/js/analytics.js"></script>
 						 <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
 
 							<div class="trigger-footer-widget-area">
