@@ -116,7 +116,7 @@
 							?>
                         
                         </div>
-                        
+                        <script type="text/javascript" src="http://script.tailsweep.com/js/2/24/2487711_4.js"></script>
                         <?php if (function_exists('wc_print_notices')) : ?>
                         <?php wc_print_notices(); ?>
                         <?php endif; ?>
