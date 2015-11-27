@@ -1,0 +1,590 @@
+/*
+Theme Name:			Mr. Tailor Child Theme
+Theme URI: 			http://mrtailor.getbowtied.com/
+Description: 		This is a child theme for Mr. Tailor. specifically for Hanna Wessman
+Author:       	Jonas Sjöstedt
+Author URI: 		http: //www.getbowtied.com/
+Template: 			mrtailor
+Version: 				1.0.1
+License: 				GNU General Public License v2.0
+License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/****************************************************************/
+/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+/****************************************************************/
+
+
+
+/***************************    GLOBAL    ***********************/
+
+
+body {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, h1 a {
+	color: #333333;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.05em;
+}
+
+h6{
+	font-size: 0.875rem;
+	line-height: 1.71428;
+}
+
+
+h1:first-child {
+	margin-top: inherit;
+}
+
+p {
+	margin-bottom: 0.8rem;
+	font-weight: 200;
+}
+
+a {
+	font-weight: inherit;
+}
+
+a:hover {
+	transition: 0,5s;
+}
+
+
+/*blockquote {
+  margin: 20px 0 40px 10px;
+  border-left: 7px solid rgb(242, 229, 229);
+  padding: 5px 0 2px 30px;
+}*/
+
+.site-top-message {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+
+@media only screen and (min-width: 64.0625em) {
+
+
+	h1{
+		font-size: 4rem;
+		line-height: 1;
+	}
+
+	h2{
+		font-size: 2.6875rem;
+		line-height: 1;
+	}
+
+	h3{
+		font-size: 1.8375rem;
+		line-height: 1.391304;
+	}
+
+
+	h4{
+		font-size: 1.3rem;
+		line-height: 1.2;
+	}
+
+	h5{
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+
+	h6{
+		font-size: 0.875rem;
+		line-height: 1.1;
+	}
+
+	p
+	{
+		font-size: 0.875rem;
+		line-height: 1.71428em;
+	}
+
+	ul, ol, dl
+	{
+		font-size: 0.875rem;
+		line-height: 1.714em;
+	}
+
+	blockquote {
+	  margin: 20px 0 40px 10px;
+	  border-left: 7px solid rgb(242, 229, 229);
+	  padding: 5px 0 2px 30px;
+	}
+
+	p {
+			font-size: 1rem;
+			line-height: 1.71428em;
+	}
+}
+
+
+
+/***********************    NAVIGATION   ************************/
+
+.site-header-sticky {
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.10);
+}
+
+
+#site-menu {
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+#menu-top-menu-2 li a{
+	font-weight: 200;
+	font-size: 0.9rem;
+	color: #5A5A5A !important;
+}
+
+
+#site-navigation-top-bar.main-navigation a {
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	opacity: 0.9;
+  border-bottom: 1px solid transparent;
+}
+
+#site-navigation-top-bar.main-navigation a:hover {
+	border-bottom: 1px solid black;
+}
+
+#site-navigation-top-bar > ul > li > a {
+	padding: 11px 10px 4px;
+}
+
+/*#menu-top-menu-master > ul > li > ul > a {
+	padding: 11px 10px 4px;
+}*/
+
+.main-navigation ul ul {
+	top: 96%; //hide the border underline at hover
+}
+
+.header-centered #site-menu {
+	margin: 5px 0 !important;
+}
+
+.on_page_scroll a {
+	color: black !important;
+}
+
+.site-search {
+	background-color: white;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+  background: #f1f1f1;
+  border-color: transparent;
+  margin-bottom: 10px;
+  font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.site-search.open input[type=text]:focus, .site-search.open input[type=search]:focus {
+    border-color: #AA714A;
+    transition: 0.5s;
+}
+
+.row_inverse {
+	color: white !important;
+}
+
+/*
+Desktop styles
+*/
+
+@media only screen and (min-width: 64.0625em) {
+
+	#menu-row {
+	  width: 1280px;
+	  margin: 40px auto 20px;
+	  border-bottom: 2px solid black;
+	}
+
+	.site-search {
+	    top: 25%;
+	    bottom: 0;
+	    margin-top: -23px;
+	}
+
+	search.open input[type=search] {
+	    border: 1px solid #AA714A;
+	    font-weight: normal;
+	}
+
+	.main-navigation ul li a {
+		font-weight: 100;
+		letter-spacing: 0.05em;
+	}
+
+	.main-navigation > ul > li.menu-item-has-children {
+		padding: 0;
+		margin: 0;
+	}
+
+	.main-navigation > ul > li.menu-item-has-children > a:after {
+		display: none;
+	}
+
+
+}
+
+/***************************    HEADER    ************************/
+
+
+
+#hannas-room-nw-mini {
+	background-image: url("/wp-content/themes/mrtailor-child/img/HannasRoom-Logga-liggandes.png");
+	height: 20px;
+	width: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 8px 0 0;
+}
+
+
+/*
+iPad Styles
+*/
+
+/*
+Desktop styles
+*/
+@media only screen and (min-width: 64.0625em) {
+
+	.site-header-wrapper
+	{
+		border-bottom: 2px solid black;
+		margin: 50px auto 0;
+	}
+
+	.site-header ul, .site-header ol, .site-header dl, .site-header-sticky ul, .site-header-sticky ol, .site-header-sticky dl {
+		line-height: 1;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
+	.site-header ul {
+		font-size: 0.9rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.site-header ul {
+		font-size: 1.3rem;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+	.site-branding img {
+		height:auto!important;
+		max-height: 100px;
+	}
+}
+
+
+
+
+
+/***************************    PAGES    ************************/
+
+/*article div div {
+	background: white;
+}*/
+
+.masonry-front-title div a {
+	text-decoration: none;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: white !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 150px rgba(0, 0, 0, 0.36);
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
+}
+
+.front-blog-excerpt {
+	text-align: center;
+}
+
+.front-blog-excerpt p, .front-blog-excerpt p a {
+	font-size: 1rem;
+	line-height: 1.6;
+
+}
+
+
+.front-blog-date {
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	opacity: 0.7;
+	font-weight: 200;
+	font-size: 0.8rem;
+	border-bottom: 2px solid;
+	max-width: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 9px;
+}
+
+
+.from_the_blog_item h3 a {
+	color: #333;
+	font-weight: 300;
+}
+
+/*.content-bg {
+	background: white;
+	border: 1px solid rgb(237, 237, 237);
+}*/
+
+.content-area {
+	padding-top: 20px;
+}
+
+
+/*
+Desktop styles
+*/
+
+@media only screen and (max-width: 63.9375em) and (min-width: 40.063em) {
+	.front_first_sec {
+		min-height: 800px;
+	}
+}
+
+@media only screen and (min-width: 64.0625em) {
+
+	.front-blog-post-1 {
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+	}
+
+	.front-blog-heading {
+		padding: 0;
+		margin-bottom: 10px;
+		margin-top: 45px;
+	}
+
+	.front-blog-heading h2 {
+		font-size: 2rem;
+	}
+
+	.front-blog-date {
+		font-size: 0.8rem;
+	}
+
+	.front-blog-excerpt p, .front-blog-excerpt p a {
+		font-size: 1rem;
+		line-height: 1.6;
+
+	}
+
+	.front-blog-button {
+		font-weight: 100;
+		font-size: 2rem;
+		letter-spacing: 2px;
+	}
+
+	.from_the_blog_item h3 {
+		text-align: center;
+		font-size: 1em;
+		line-height: 1.304em;
+		margin: 0 0 12px;
+	}
+
+	.from_the_blog_item .post_header_date {
+	  font-size: 0.775em;
+	  display: none;
+	}
+
+	.content-bg {
+		padding: 15px;
+	}
+
+	.masonry-front-title div a {
+	  font-size: 45px;
+	}
+
+	.front_first_sec {
+		min-height: 1200px;
+	}
+
+}
+
+
+/***************************    POST    *************************/
+
+.page-title {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 100;
+	letter-spacing: 8px;
+}
+
+h1.entry-title {
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+.post_header_date {
+	text-align: center;
+	margin: 18px 0 60px 0;
+}
+
+.post_header_date a {
+	font-weight: 200;
+	color: #333333;
+	font-size: 0.9rem;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+
+/* Vit bakgrund på blogginlägg */
+
+.content-container {
+	background: white;
+  max-width: 1180px;
+}
+
+.entry-content {
+    padding-bottom: 30px;
+}
+
+hr.content_hr {
+	border: 2px solid black;
+	max-width: 80%;
+	margin: 0 auto 50px;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.content-area {
+		padding-top: 10px;
+	}
+
+	hr.content_hr {
+		max-width: 700px;
+	}
+}
+
+
+/***************************    FOOTER    *************************/
+
+
+
+#site-footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#site-footer .widget-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+}
+
+#site-footer .widget .post-date {
+	color: #8A3E3D;
+	font-size: 0.8em;
+}
+
+
+
+#site-footer a {
+  font-weight: bold !important;
+	border-bottom: 2px solid transparent;
+}
+
+#site-footer a:hover {
+	color: #901A19 !important;
+	border-bottom: 2px solid #983C3C;
+}
+
+
+.widget .recentcomments {
+	font-weight: 200 !important;
+}
+
+.widget a {
+	font-weight: 200 !important;
+}
+
+.comments_section {
+	border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+
+.comment-content:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 20px 15px;
+  border-color: transparent white transparent transparent;
+  content: "";
+  font-size: 1px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -35px;
+  background: transparent;
+}
+
+.comment-content {
+	padding: 5px 10px !important;
+	background: white;
+	margin-left: 100px;
+	/*  border: 1px solid rgba(0, 0, 0, 0.11);*/
+}
+
+
+.comment-author-avatar {
+	margin-left: -100px;
+}
+
+.comment-author {
+	font-weight: 200;
+	color: rgb(75, 75, 75);
+}
+
+.comment-author a {
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	color: rgb(75, 75, 75);
+}
+
+
+.comment-metadata time {
+	color: #939393;
+}
+
+article footer {
+  padding-bottom: 40px;
+}
+
+
+
+
+footer.entry-meta a {
+	font-weight: bold;
+	border-bottom: 1px solid rgb(183, 159, 131);
+}
+
+
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
