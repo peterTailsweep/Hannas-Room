@@ -5,7 +5,7 @@
     if ( (isset($mr_tailor_theme_options['sidebar_blog_listing'])) && ($mr_tailor_theme_options['sidebar_blog_listing'] == "1" ) ) $blog_with_sidebar = "yes";
     if (isset($_GET["blog_with_sidebar"])) $blog_with_sidebar = $_GET["blog_with_sidebar"];    
 ?>
-            
+<?php if(!isset($count)) $count = 0; else $count++; ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         
     <div class="row content-container">
@@ -104,3 +104,8 @@
     </div><!-- .row -->
 
 </article><!-- #post -->
+<?php if($count == 1): ?>
+<script type="text/javascript" src="http://script.tailsweep.com/js/2/24/2487711_2.js"></script>
+<?php else: ?>
+<script type="text/javascript" src="http://script.tailsweep.com/js/2/24/2487711_4.js"></script>
+<?php endif; ?>
